@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Senhas</h1>
+        <div class="password-display" id="passwordDisplay">
+            Sua senha aparecerá aqui
+        </div>
+
+        <div class="input-group">
+            <label for="passwordLength">Comprimento da Senha:</label>
+            <input type="number" id="passwordLength" min="6" max="20" value="12">
+        </div>
+
+        <div class="checkbox-group">
+            <div>
+                <input type="checkbox" id="includeUppercase" checked>
+                <label for="includeUppercase">Incluir Letras Maiúsculas (A-Z)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="includeLowercase" checked>
+                <label for="includeLowercase">Incluir Letras Minúsculas (a-z)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="includeNumbers" checked>
+                <label for="includeNumbers">Incluir Números (0-9)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="includeSymbols">
+                <label for="includeSymbols">Incluir Caracteres Especiais (!@#$%...)</label>
+            </div>
+        </div>
+
+        <button id="generateButton">Gerar Senha</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border-top: 5px solid #4CAF50;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+/* Estilo para o campo de exibição da senha */
+.password-display {
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px; /* Espaço abaixo do campo */
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #2e7d32;
+    overflow-wrap: break-word; /* Garante que senhas longas quebrem a linha */
+    min-height: 50px; /* Altura mínima para o campo */
+    display: flex; /* Para centralizar o texto verticalmente */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.9;
+    transition: opacity .2s;
+}
+
+.input-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.input-group input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.input-group span {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px; /* Espaço abaixo dos checkboxes */
+}
+
+.checkbox-group div {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #4CAF50;
+}
+
+.checkbox-group label {
+    font-size: 1.1em;
+    color: #444;
+    cursor: pointer;
+}
+
+/* Estilo para o botão de gerar senha */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Efeito de leve "levitação" */
+}
+
+button:active {
+    transform: translateY(0); /* Retorna à posição original ao clicar */
+}
